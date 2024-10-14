@@ -11,14 +11,17 @@
   <section id="up" class="promo">
     <div class="container">
       <header class="header">
-        <a href="#" class="header__logo">
-          <img src="#" alt="logo">
-        </a>
+        <!-- <a href="#" class="header__logo">
+          <img src="img/logo.png" alt="logo">
+        </a> -->
+        <div class="header__contacts">
+          <a href="tel:+380667516083" class="header__phone">+38 (066) 751-60-83</a>
+        </div>
         <div class="header__official">
           Create your request for IT team
         </div>
-        <div class="header__contacts">
-          <a href="tel:+380667516083" class="header__phone">+38 (066) 751-60-83</a>
+        <div class="header__button">
+          <button data-modal="login" class="button">Login</button>
         </div>
       </header>
     </div>
@@ -27,86 +30,60 @@
   <section class="catalog">
     <div class="container">
       <h2 class="title">Request catalog</h2>
-
-      <div class="catalog__content catalog__content_active">
-        <div class="catalog-item">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active">
-              <div class="catalog-item__subtitle">Hardware request</div>
-              <div class="catalog-item__descr">This is request for hardware such as laptop, mobile etc.</div>
-              <button class="button"><a href="#1">Create request</a></button>
+      <input type="text" placeholder="Find your request" class="catalog__input">
+      
+      <div class="container-flex">
+        <div class="catalog__content">
+          <div class="catalog-item">
+            <div class="catalog-item__wrapper">
+              <div class="catalog-item__content catalog-item__content_active">
+                <div class="catalog-item__subtitle">Hardware request</div>
+                <div class="catalog-item__descr">This request for hardware such as laptop, mobile etc.</div>
+                <button class="button catalog-item__link">Create request</button>
+              </div>
             </div>
           </div>
         </div>
+    
+        <div class="catalog__content">
+          <div class="catalog-item">
+            <div class="catalog-item__wrapper">
+              <div class="catalog-item__content catalog-item__content_active">
+                <div class="catalog-item__subtitle">Hardware request</div>
+                <div class="catalog-item__descr">This request for hardware such as laptop, mobile etc.</div>
+                <button class="button catalog-item__link">Create request</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="catalog__content">
+          <div class="catalog-item">
+            <div class="catalog-item__wrapper">
+              <div class="catalog-item__content catalog-item__content_active">
+                <div class="catalog-item__subtitle">Hardware request</div>
+                <div class="catalog-item__descr">This request for hardware such as laptop, mobile etc.</div>
+                <button class="button catalog-item__link">Create request</button>
+              </div>
+            </div>
+          </div>
+        </div>     
       </div>
-
-      <div class="catalog__content">
-        <div class="catalog-item">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active">
-              <div class="catalog-item__subtitle">Hardware request</div>
-              <div class="catalog-item__descr">This is request for hardware such as laptop, mobile etc.</div>
-              <button class="button"><a href="#2">Create request</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="catalog__content">
-        <div class="catalog-item">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active">
-              <div class="catalog-item__subtitle">Hardware request</div>
-              <div class="catalog-item__descr">This is request for hardware such as laptop, mobile etc.</div>
-              <button class="button"><a href="#3">Create request</a></button>
-            </div>
-          </div>
-        </div>
+      
+      <div class="catalog__fixed">
+        <p>Check your requests</p>
+        <button class="button catalog-item__link">View requests</button>
       </div>
     </div>
   </section>
 
-  <section class="feedback">
-    <div class="container">
-      <h2 class="title">Customer feedback</h2>
-
-      <div class="feedback__customer">
-        <div class="feedback__customer-photo">
-          <img src="#" alt="photo">
-        </div>
-        <div class="feedback__descr">
-          <div class="feedback__customer-name">Artur Kovalenko</div>
-          <div class="feedback__customer-feedback">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eius placeat libero culpa aspernatur? Iste sapiente atque aspernatur at maxime? Distinctio maxime ratione quidem debitis earum eum illo cupiditate eos.
-          </div>
-        </div>
-      </div>
-
-      <div class="feedback__customer">
-        <div class="feedback__customer-photo">
-          <img src="#" alt="photo">
-        </div>
-        <div class="feedback__descr">
-          <div class="feedback__customer-name">Artur Kovalenko</div>
-          <div class="feedback__customer-feedback">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eius placeat libero culpa aspernatur? Iste sapiente atque aspernatur at maxime? Distinctio maxime ratione quidem debitis earum eum illo cupiditate eos.
-          </div>
-        </div>
-      </div>
-
-      <div class="feedback__customer">
-        <div class="feedback__customer-photo">
-          <img src="#" alt="photo">
-        </div>
-        <div class="feedback__descr">
-          <div class="feedback__customer-name">Artur Kovalenko</div>
-          <div class="feedback__customer-feedback">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eius placeat libero culpa aspernatur? Iste sapiente atque aspernatur at maxime? Distinctio maxime ratione quidem debitis earum eum illo cupiditate eos.
-          </div>
-        </div>
-      </div>
+  <!-- <div class="container">
+    <div class="check">
+      <p>Check requests</p>
+      <hr>
+      <button></button>
     </div>
-  </section>
+  </div> -->
 
   <footer class="footer">
     <div class="footer__info">
@@ -115,8 +92,15 @@
     </div>
   </footer>
 
-  <a href="#up" class="pageup">
-    <img src="#" alt="up">
-  </a>
+  <div class="overlay">
+    <div class="modal" id="login">
+      <div class="modal__subtitle">Login</div>
+      <div class="modal__close">&times;</div>
+      <form class="login-form login-form_mt25" action="#">
+        <input name="email" placeholder="Email" type="email">
+        <input name="password" placeholder="Password" type="password">
+      </form>
+    </div>
+  </div>
 </body>
 </html>

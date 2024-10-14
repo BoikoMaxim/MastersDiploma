@@ -1,0 +1,40 @@
+.catalog__input {
+    display: block;
+    width: 63%;
+    height: 54px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 40px auto 0 auto;
+    border: black 1px solid;
+    padding: 0 20px;
+    color: #4B4B4B;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.login-form {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    input {
+        width: 303px;
+        height: 54px;
+        border-radius: 5px;
+        background-color: #fff;
+        margin-bottom: 15px;
+        border: none;
+        padding: 0 20px;
+        color: #4B4B4B;
+        font-size: 14px;
+        font-weight: 300;
+        &:nth-child(2) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &_mt25 {
+        margin-top: 25px;
+    }
+}
