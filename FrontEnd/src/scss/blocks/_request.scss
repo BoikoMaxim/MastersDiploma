@@ -1,0 +1,67 @@
+.input input{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+.request {
+    padding: 75px 0 26px 0;
+
+    &__subtitle {
+        margin-left: 20%;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    &__submit {
+        background-color: coral;
+        color: #FFF;
+    }
+
+    &__comment {
+        width: 70%;
+        height: 150px;
+        margin-left: 14.8%;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    &__forms {
+        width: 70%;
+        margin-left: 14%;
+        display: flex;
+        justify-content: space-evenly;
+        &_wrapper {
+            p {
+                margin-left: 28%;
+                font-size: 18px;
+            }
+        }
+    }
+
+    &_wrapper {
+        margin-left: 14.8%;
+        p {
+            margin-left: 53px;
+            font-size: 18px;
+        }
+    }
+}
+
+#hardware, #system, #role {
+    width: 250px;
+    height: 32px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px black solid;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}

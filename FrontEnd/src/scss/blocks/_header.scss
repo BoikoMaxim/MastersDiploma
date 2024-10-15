@@ -1,5 +1,5 @@
 .promo {
-    background-color: lightgray;
+    background-color: rgb(248, 223, 223);
 }
 
 .header {
@@ -7,12 +7,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    // &__logo {
-    //     width: 100px;
-    //     img {
-    //         width: 100%;
-    //     }
-    // }
     
     &__official {
         color: black;
@@ -33,5 +27,27 @@
         font-size: 18px;
         font-weight: 700;
         text-decoration: none;
+    }
+
+    &__dropdown {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+
+    &__button:hover .dropdown {
+        display: block;
     }
 }
