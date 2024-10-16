@@ -8,60 +8,62 @@
     <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
-    <section class="promo">
-        <div class="container">
-            <header class="header">
-                <div class="header__contacts">
-                    <button data-modal="back" class="button">Back to main</button>
-                </div>
-                <div class="header__official">
-                    Hardware request
-                </div>
-                <div class="header__button">
-                    <button data-modal="fullname" class="button">Full name</button>
-                    <div class="header__dropdown">
-                        <ul>
-                            <li>Exit</li>
-                            <li>Settings</li>
-                        </ul>
+    <main class="main-content">
+        <section class="promo">
+            <div class="container">
+                <header class="header">
+                    <div class="header__button">
+                        <button data-modal="back" class="button">Back to main</button>
                     </div>
-                </div>
-            </header>
-        </div>
-    </section>
-
-    <section class="request">
-        <div class="container">
-            <h2 class="title">Submit form for IT team</h2>
-
-            <div class="input">
-                <div class="request__subtitle">First name</div>
-                <input type="text" name="fname">
-                <div class="request__subtitle">Last name</div>
-                <input type="text" name="lname">
-                <div class="request__subtitle">Email</div>
-                <input name="email" type="email">
-                <div class="request__subtitle">Department</div>
-                <input name="department" type="text">
-                <div class="request_wrapper">
-                    <p>Choose hardware</p>
-                    <form action="#" class="request__hardware">
-                        <label for="hardware"></label>
-                        <select name="hardware" id="hardware">
-                            <option value="choose">Choose hardware</option>
-                            <option value="pc">PC</option>
-                            <option value="laptop">Laptop</option>
-                            <option value="headset">Audio headset</option>
-                        </select>
-                    </form>
-                </div>
-                
-                <div class="request__subtitle">Comments</div>
-                <textarea name="comment" class="request__comment" cols="30" rows="10"></textarea>
-                <input type="submit" name="submit" class="request__submit">
+                    <div class="header__official">
+                        Hardware request
+                    </div>
+                    <div class="header__button">
+                        <button data-modal="fullname" class="button">Full name</button>
+                        <div class="header__dropdown">
+                            <ul>
+                                <li>Exit</li>
+                                <li>Settings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <section class="request">
+            <div class="container">
+                <h2 class="title">Submit form for IT team</h2>
+    
+                <div class="input">
+                    <div class="request__subtitle">First name</div>
+                    <input type="text" name="fname">
+                    <div class="request__subtitle">Last name</div>
+                    <input type="text" name="lname">
+                    <div class="request__subtitle">Email</div>
+                    <input name="email" type="email">
+                    <div class="request__subtitle">Department</div>
+                    <input name="department" type="text">
+                    <div class="request_wrapper">
+                        <p>Choose hardware</p>
+                        <form action="#" class="request__hardware">
+                            <label for="hardware"></label>
+                            <select name="hardware" id="hardware">
+                                <option value="choose">Choose hardware</option>
+                                <option value="pc">PC</option>
+                                <option value="laptop">Laptop</option>
+                                <option value="headset">Audio headset</option>
+                            </select>
+                        </form>
+                    </div>
+                    
+                    <div class="request__subtitle">Comments</div>
+                    <textarea name="comment" class="request__comment" cols="30" rows="10"></textarea>
+                    <input type="submit" name="submit" class="request__submit">
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer__info">

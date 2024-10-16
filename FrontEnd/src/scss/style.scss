@@ -9,9 +9,25 @@
 @import 'blocks/forms';
 @import 'blocks/modal';
 @import 'blocks/request';
+@import 'blocks/list';
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
 }
 
 .container {

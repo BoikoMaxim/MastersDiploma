@@ -1,0 +1,36 @@
+.list {
+    padding: 75px 0 26px 0;
+    &__content {
+        margin: 40px 0;
+        width: 100%;
+        display: block;
+    }
+
+    &-item {
+        border: 1px solid black;
+        border-radius: 25px;
+        padding: 30px 20px 40px 30px;
+        background-color: rgb(233, 233, 233);
+        &__subtitle{
+            margin-left: 50px;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__descr {
+            margin-top: 10px;
+            color: black;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        &__link {
+            margin-top: 20px;
+            width: 300px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
