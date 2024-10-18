@@ -15,4 +15,10 @@
         background-color: lightcoral;
         color: black;
     }
+
+    &__wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
