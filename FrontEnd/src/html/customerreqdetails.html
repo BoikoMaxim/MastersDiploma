@@ -37,13 +37,13 @@
     
                 <div class="input">
                     <div class="request__subtitle">First name</div>
-                    <input type="text" name="fname">
+                    <input type="text" name="fname" value="John">
                     <div class="request__subtitle">Last name</div>
-                    <input type="text" name="lname">
+                    <input type="text" name="lname" value="Doe">
                     <div class="request__subtitle">Email</div>
-                    <input name="email" type="email">
+                    <input name="email" type="email" value="john_doe@gmail.com">
                     <div class="request__subtitle">Department</div>
-                    <input name="department" type="text">
+                    <input name="department" type="text" value="HR">
                     <div class="request__forms">
                         <div class="request__forms_wrapper">
                             <p>Choose system</p>
@@ -51,7 +51,7 @@
                                 <label for="system"></label>
                                 <select name="system" id="system">
                                     <option value="choose">Choose system</option>
-                                    <option value="mfiles">M-Files</option>
+                                    <option value="mfiles" selected>M-Files</option>
                                     <option value="salesforce">Salesforce</option>
                                     <option value="md365">Microsoft Dynamics 365</option>
                                     <option value="confluence">Confluence</option>
@@ -69,7 +69,7 @@
                                 <label for="role"></label>
                                 <select name="role" id="role">
                                     <option value="choose">Choose role</option>
-                                    <option value="user">User</option>
+                                    <option value="user" selected>User</option>
                                     <option value="administrator">Administrator</option>
                                     <option value="sysadmin">System administrator</option>
                                     <option value="sqladmin">SQL administrator</option>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="request__subtitle">Comments</div>
-                    <textarea name="comment" class="request__comment" cols="30" rows="10"></textarea>
+                    <textarea name="comment" class="request__comment" cols="30" rows="10">Need access to the system as user</textarea>
                 </div>
             </div>
         </section>

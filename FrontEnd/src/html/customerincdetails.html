@@ -37,20 +37,20 @@
     
                 <div class="input">
                     <div class="request__subtitle">First name</div>
-                    <input type="text" name="fname">
+                    <input type="text" name="fname" value="John">
                     <div class="request__subtitle">Last name</div>
-                    <input type="text" name="lname">
+                    <input type="text" name="lname" value="Doe">
                     <div class="request__subtitle">Email</div>
-                    <input name="email" type="email">
+                    <input name="email" type="email" value="john_doe@gmail.com">
                     <div class="request__subtitle">Department</div>
-                    <input name="department" type="text">
+                    <input name="department" type="text" value="HR">
                     <div class="request_wrapper">
                         <p>Choose system</p>
                         <form action="#" class="request__hardware">
                             <label for="hardware"></label>
                             <select name="hardware" id="hardware">
                                 <option value="choose">Choose system</option>
-                                <option value="mfiles">M-Files</option>
+                                <option value="mfiles" selected>M-Files</option>
                                 <option value="salesforce">Salesforce</option>
                                 <option value="md365">Microsoft Dynamics 365</option>
                                 <option value="confluence">Confluence</option>
@@ -62,7 +62,7 @@
                         </form>
                     </div>
                     <div class="request__subtitle">Description of problem</div>
-                    <textarea name="comment" class="request__comment" cols="30" rows="10"></textarea>
+                    <textarea name="comment" class="request__comment" cols="30" rows="10">Cannot connect to the system</textarea>
                 </div>
             </div>
         </section>
