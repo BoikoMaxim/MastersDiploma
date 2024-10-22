@@ -1,21 +1,33 @@
 .list {
     padding: 75px 0 26px 0;
+    &__wrapper{
+        margin: 0 20px;
+    }
+
     &__content {
         margin: 40px 0;
         width: 100%;
         display: block;
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 80px 30px 80px;
+        }
     }
 
     &-item {
+        width: 100%;
         border: 1px solid black;
         border-radius: 25px;
-        padding: 30px 20px 40px 30px;
+        padding: 30px;
         background-color: rgb(233, 233, 233);
         &__subtitle{
-            margin-left: 50px;
             color: black;
             font-size: 24px;
             font-weight: 700;
+            &_button {
+                display: block;
+            }
         }
 
         &__descr {
@@ -26,11 +38,17 @@
         }
 
         &__link {
+            display: block;
+            margin: 0 auto;
             margin-top: 20px;
             width: 300px;
             height: 40px;
             font-size: 14px;
             font-weight: 300;
+            &_small {
+                width: 80px;
+                margin-top: 0;
+            }
         }
     }
 }
